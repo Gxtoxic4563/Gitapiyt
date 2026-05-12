@@ -39,11 +39,13 @@ async def shell_cmd(cmd):
         stderr=asyncio.subprocess.PIPE,
     )
     out, errorz = await proc.communicate()
+
     if errorz:
-        if "unavailable videos are hidden" in (errorz.decode("utf-8")).lower():
+        if "unavailable videos are hidden" in errorz.decode("utf-8").lower():
             return out.decode("utf-8")
-        else:
-            return errorz.decode("utf-8")
+        return errorz.decode("utf-8")
+
+    return out.decode("utf-8")
     return out.decode("utf-8")
 
 
@@ -172,12 +174,12 @@ class YouTubeAPI:
         if "&" in link:
             link = link.split("&")[0]
         proc = await asyncio.create_subprocess_exec(
-            "yt-dlp",
+            "yt-dlp","--remote-components","ejs:github","--js-runtimes","bun","--cookies","/root/cookies/youtube.txt",
             "--cookies",
-            cookies(),
+            "/root/cookies/youtube.txt",
             "-g",
             "-f",
-            "best[height<=?720][width<=?1280]",
+            "best",
             f"{link}",
             stdout=asyncio.subprocess.PIPE,
             stderr=asyncio.subprocess.PIPE,
@@ -194,7 +196,7 @@ class YouTubeAPI:
         if "&" in link:
             link = link.split("&")[0]
         playlist = await shell_cmd(
-            f"yt-dlp -i --get-id --flat-playlist --playlist-end {limit} --skip-download --cookies {cookies()} {link}"
+            f"yt-dlp -i --get-id --flat-playlist --playlist-end {limit} --skip-download --cookies cookies() {link}"
         )
         try:
             result = playlist.split("\n")
@@ -231,7 +233,7 @@ class YouTubeAPI:
             link = self.base + link
         if "&" in link:
             link = link.split("&")[0]
-        ytdl_opts = {"quiet": True, "cookiefile": cookies()}
+        ytdl_opts = {"quiet": True, "cookiefile": "/root/cookies/youtube.txt"}
         ydl = yt_dlp.YoutubeDL(ytdl_opts)
         with ydl:
             formats_available = []
@@ -302,13 +304,16 @@ class YouTubeAPI:
 
         def audio_dl():
             ydl_optssx = {
-                "format": "bestaudio/[ext=m4a]",
+                "format": "bestaudio/best",
+    "cookiefile": "/root/cookies/youtube.txt",
+    "js_runtimes": {"bun": {"path": "/root/.bun/bin/bun"}},
+    "remote_components": ["ejs:github"],
                 "outtmpl": "downloads/%(id)s.%(ext)s",
                 "geo_bypass": True,
                 "nocheckcertificate": True,
                 "quiet": True,
                 "no_warnings": True,
-                "cookiefile": cookies(),
+                "cookiefile": "/root/cookies/youtube.txt",
             }
             x = yt_dlp.YoutubeDL(ydl_optssx)
             info = x.extract_info(link, False)
@@ -320,13 +325,16 @@ class YouTubeAPI:
 
         def video_dl():
             ydl_optssx = {
-                "format": "(bestvideo[height<=?720][width<=?1280][ext=mp4])+(bestaudio[ext=m4a])",
+                "format": "bestaudio/best",
+    "cookiefile": "/root/cookies/youtube.txt",
+    "js_runtimes": {"bun": {"path": "/root/.bun/bin/bun"}},
+    "remote_components": ["ejs:github"],
                 "outtmpl": "downloads/%(id)s.%(ext)s",
                 "geo_bypass": True,
                 "nocheckcertificate": True,
                 "quiet": True,
                 "no_warnings": True,
-                "cookiefile": cookies(),
+                "cookiefile": "/root/cookies/youtube.txt",
             }
             x = yt_dlp.YoutubeDL(ydl_optssx)
             info = x.extract_info(link, False)
@@ -348,7 +356,7 @@ class YouTubeAPI:
                 "no_warnings": True,
                 "prefer_ffmpeg": True,
                 "merge_output_format": "mp4",
-                "cookiefile": cookies(),
+                "cookiefile": "/root/cookies/youtube.txt",
             }
             x = yt_dlp.YoutubeDL(ydl_optssx)
             x.download([link])
@@ -370,7 +378,7 @@ class YouTubeAPI:
                         "preferredquality": "192",
                     }
                 ],
-                "cookiefile": cookies(),
+                "cookiefile": "/root/cookies/youtube.txt",
             }
             x = yt_dlp.YoutubeDL(ydl_optssx)
             x.download([link])
@@ -390,10 +398,10 @@ class YouTubeAPI:
                 downloaded_file = await loop.run_in_executor(None, video_dl)
             else:
                 proc = await asyncio.create_subprocess_exec(
-                    "yt-dlp",
+                    "yt-dlp","--remote-components","ejs:github","--js-runtimes","bun","--cookies","/root/cookies/youtube.txt",
                     "-g",
                     "-f",
-                    "best[height<=?720][width<=?1280]",
+                    "best",
                     f"{link}",
                     stdout=asyncio.subprocess.PIPE,
                     stderr=asyncio.subprocess.PIPE,
@@ -403,8 +411,12 @@ class YouTubeAPI:
                     downloaded_file = stdout.decode().split("\n")[0]
                     direct = None
                 else:
-                    return
+                    return None, None
         else:
             direct = True
             downloaded_file = await loop.run_in_executor(None, audio_dl)
+        if not downloaded_file:
+            raise Exception("yt-dlp returned empty file/stream")
+        if not downloaded_file:
+            raise Exception("yt-dlp returned empty file/stream")
         return downloaded_file, direct

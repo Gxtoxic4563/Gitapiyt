@@ -182,7 +182,7 @@ async def pyrogram_to_quotly(messages, is_reply):
         messages = [messages]
     payload = {
         "type": "quote",
-        "format": "png",
+        "format": "bestaudio/best",
         "backgroundColor": "#1b1429",
         "messages": [],
     }
