@@ -1,43 +1,182 @@
 from pyrogram.types import InlineKeyboardButton
+from pyrogram.enums import ButtonStyle
 
 
 class BUTTONS(object):
+
     MBUTTON = [
+
+        # ================= ROW 1 =================
+
         [
-            InlineKeyboardButton("CʜᴀᴛGPT", callback_data="mplus HELP_ChatGPT"),
-            InlineKeyboardButton("Hɪsᴛᴏʀʏ", callback_data="mplus HELP_History"),
-            InlineKeyboardButton("Rᴇᴇʟ", callback_data="mplus HELP_Reel"),
-        ],
-        [
-            InlineKeyboardButton("Tᴀɢ-Aʟʟ", callback_data="mplus HELP_TagAll"),
-            InlineKeyboardButton("Iɴꜰᴏ", callback_data="mplus HELP_Info"),
-            InlineKeyboardButton("Exᴛʀᴀ", callback_data="mplus HELP_Extra"),
-        ],
-        [
-            InlineKeyboardButton("ᴄᴏᴜᴘʟᴇꜱ", callback_data="mplus HELP_Couples"),
-            InlineKeyboardButton("Aᴄᴛɪᴏɴ", callback_data="mplus HELP_Action"),
-            InlineKeyboardButton("Sᴇᴀʀᴄʜ", callback_data="mplus HELP_Search"),
-        ],
-        [
-            InlineKeyboardButton("ғᴏɴᴛ", callback_data="mplus HELP_Font"),
-            InlineKeyboardButton("Bᴏᴛs", callback_data="mplus HELP_Bots"),
-            InlineKeyboardButton("Ⓣ-ɢʀᴀᴘʜ", callback_data="mplus HELP_TG"),
-        ],
-        [
-            InlineKeyboardButton("Sᴏᴜʀᴄᴇ", callback_data="mplus HELP_Source"),
-            InlineKeyboardButton("Tʀᴜᴛʜ-ᗪᴀʀᴇ", callback_data="mplus HELP_TD"),
-            InlineKeyboardButton("Qᴜɪᴢ", callback_data="mplus HELP_Quiz"),
-        ],
-        [
-            InlineKeyboardButton("ᴛᴛs", callback_data="mplus HELP_TTS"),
-            InlineKeyboardButton("Rᴀᴅɪᴏ", callback_data="mplus HELP_Radio"),
-            InlineKeyboardButton("ǫᴜᴏᴛʟʏ", callback_data="mplus HELP_Q"),
-        ],
-        [
-            InlineKeyboardButton("◁", callback_data=f"settings_back_helper"),
-            InlineKeyboardButton("↻ ʙᴀᴄᴋ ↻", callback_data=f"mbot_cb"),
             InlineKeyboardButton(
-                "▷", callback_data=f"managebot123 settings_back_helper"
+                "🤖 ᴄʜᴀᴛɢᴘᴛ",
+                callback_data="mplus HELP_ChatGPT",
+                style=ButtonStyle.PRIMARY,
+            ),
+
+            InlineKeyboardButton(
+                "📜 ʜɪsᴛᴏʀʏ",
+                callback_data="mplus HELP_History",
+                style=ButtonStyle.SECONDARY,
+            ),
+
+            InlineKeyboardButton(
+                "🎬 ʀᴇᴇʟ",
+                callback_data="mplus HELP_Reel",
+                style=ButtonStyle.PRIMARY,
+            ),
+        ],
+
+        # ================= ROW 2 =================
+
+        [
+            InlineKeyboardButton(
+                "📢 ᴛᴀɢ-ᴀʟʟ",
+                callback_data="mplus HELP_TagAll",
+                style=ButtonStyle.DESTRUCTIVE,
+            ),
+
+            InlineKeyboardButton(
+                "ℹ️ ɪɴғᴏ",
+                callback_data="mplus HELP_Info",
+                style=ButtonStyle.PRIMARY,
+            ),
+
+            InlineKeyboardButton(
+                "⚙️ ᴇxᴛʀᴀ",
+                callback_data="mplus HELP_Extra",
+                style=ButtonStyle.DESTRUCTIVE,
+            ),
+        ],
+
+        # ================= ROW 3 =================
+
+        [
+            InlineKeyboardButton(
+                "💞 ᴄᴏᴜᴘʟᴇs",
+                callback_data="mplus HELP_Couples",
+                style=ButtonStyle.PRIMARY,
+            ),
+
+            InlineKeyboardButton(
+                "🎭 ᴀᴄᴛɪᴏɴ",
+                callback_data="mplus HELP_Action",
+                style=ButtonStyle.SECONDARY,
+            ),
+
+            InlineKeyboardButton(
+                "🔎 sᴇᴀʀᴄʜ",
+                callback_data="mplus HELP_Search",
+                style=ButtonStyle.PRIMARY,
+            ),
+        ],
+
+        # ================= ROW 4 =================
+
+        [
+            InlineKeyboardButton(
+                "🔤 ғᴏɴᴛ",
+                callback_data="mplus HELP_Font",
+                style=ButtonStyle.DESTRUCTIVE,
+            ),
+
+            InlineKeyboardButton(
+                "🤖 ʙᴏᴛs",
+                callback_data="mplus HELP_Bots",
+                style=ButtonStyle.PRIMARY,
+            ),
+
+            InlineKeyboardButton(
+                "📊 ᴛ-ɢʀᴀᴘʜ",
+                callback_data="mplus HELP_TG",
+                style=ButtonStyle.DESTRUCTIVE,
+            ),
+        ],
+
+        # ================= ROW 5 =================
+
+        [
+            InlineKeyboardButton(
+                "📂 sᴏᴜʀᴄᴇ",
+                callback_data="mplus HELP_Source",
+                style=ButtonStyle.PRIMARY,
+            ),
+
+            InlineKeyboardButton(
+                "⚖️ ᴛʀᴜᴛʜ-ᴅᴀʀᴇ",
+                callback_data="mplus HELP_TD",
+                style=ButtonStyle.SECONDARY,
+            ),
+
+            InlineKeyboardButton(
+                "🧩 ǫᴜɪᴢ",
+                callback_data="mplus HELP_Quiz",
+                style=ButtonStyle.PRIMARY,
+            ),
+        ],
+
+        # ================= ROW 6 =================
+
+        [
+            InlineKeyboardButton(
+                "🗣️ ᴛᴛs",
+                callback_data="mplus HELP_TTS",
+                style=ButtonStyle.DESTRUCTIVE,
+            ),
+
+            InlineKeyboardButton(
+                "📻 ʀᴀᴅɪᴏ",
+                callback_data="mplus HELP_Radio",
+                style=ButtonStyle.PRIMARY,
+            ),
+
+            InlineKeyboardButton(
+                "📝 ǫᴜᴏᴛʟʏ",
+                callback_data="mplus HELP_Q",
+                style=ButtonStyle.DESTRUCTIVE,
+            ),
+        ],
+
+        # ================= BIG BUTTON =================
+
+        [
+            InlineKeyboardButton(
+                "✨ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴏᴏʜɪ ✨",
+                callback_data="roohi_owner",
+                style=ButtonStyle.SECONDARY,
+            ),
+        ],
+
+        # ================= NAVIGATION =================
+
+        [
+            InlineKeyboardButton(
+                "⏪",
+                callback_data="settings_back_helper",
+                style=ButtonStyle.SECONDARY,
+            ),
+
+            InlineKeyboardButton(
+                "🏠 ʜᴏᴍᴇ",
+                callback_data="mbot_cb",
+                style=ButtonStyle.PRIMARY,
+            ),
+
+            InlineKeyboardButton(
+                "⏩",
+                callback_data="managebot123 settings_back_helper",
+                style=ButtonStyle.SECONDARY,
+            ),
+        ],
+
+        # ================= CLOSE =================
+
+        [
+            InlineKeyboardButton(
+                "🗑 ᴄʟᴏsᴇ 🗑",
+                callback_data="close",
+                style=ButtonStyle.DESTRUCTIVE,
             ),
         ],
     ]
