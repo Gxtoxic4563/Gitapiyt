@@ -1,5 +1,6 @@
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.enums import ButtonStyle
+from Oneforall import app
 
 
 def help_pannel(_, START=None):
@@ -142,3 +143,30 @@ def help_pannel(_, START=None):
     )
 
     return upl
+
+def help_back_markup(_):
+    upl = InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton(
+                    "☝️ ⏪ ʙᴀᴄᴋ",
+                    callback_data="settings_back_helper",
+                    style=ButtonStyle.SECONDARY,
+                ),
+            ]
+        ]
+    )
+    return upl
+
+
+def private_help_panel(_):
+    buttons = [
+        [
+            InlineKeyboardButton(
+                "🍭 📚 ᴏᴘᴇɴ ʜᴇʟᴘ 🍭",
+                url=f"https://t.me/{app.username}?start=help",
+                style=ButtonStyle.PRIMARY,
+            ),
+        ],
+    ]
+    return buttons
