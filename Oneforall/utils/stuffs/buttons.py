@@ -18,7 +18,7 @@ class BUTTONS(object):
             InlineKeyboardButton(
                 "🍭 📜 ʜɪsᴛᴏʀʏ",
                 callback_data="mplus HELP_History",
-                style=ButtonStyle.SECONDARY,
+                style=ButtonStyle.SUCCESS,
             ),
 
             InlineKeyboardButton(
@@ -40,7 +40,7 @@ class BUTTONS(object):
             InlineKeyboardButton(
                 "🍭 ℹ️ ɪɴғᴏ",
                 callback_data="mplus HELP_Info",
-                style=ButtonStyle.PRIMARY,
+                style=ButtonStyle.SUCCESS,
             ),
 
             InlineKeyboardButton(
@@ -62,7 +62,7 @@ class BUTTONS(object):
             InlineKeyboardButton(
                 "🍭 🎭 ᴀᴄᴛɪᴏɴ",
                 callback_data="mplus HELP_Action",
-                style=ButtonStyle.SECONDARY,
+                style=ButtonStyle.SUCCESS,
             ),
 
             InlineKeyboardButton(
@@ -106,7 +106,7 @@ class BUTTONS(object):
             InlineKeyboardButton(
                 "🍭 ⚖️ ᴛʀᴜᴛʜ-ᴅᴀʀᴇ",
                 callback_data="mplus HELP_TD",
-                style=ButtonStyle.SECONDARY,
+                style=ButtonStyle.SUCCESS,
             ),
 
             InlineKeyboardButton(
@@ -138,13 +138,13 @@ class BUTTONS(object):
             ),
         ],
 
-        # ================= BIG BUTTON =================
+        # ================= POWERED =================
 
         [
             InlineKeyboardButton(
                 "🍭 ✨ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴏᴏʜɪ ✨ 🍭",
-                callback_data="roohi_owner",
-                style=ButtonStyle.SECONDARY,
+                callback_data="settings_back_helper",
+                style=ButtonStyle.SUCCESS,
             ),
         ],
 
@@ -152,21 +152,21 @@ class BUTTONS(object):
 
         [
             InlineKeyboardButton(
-                "☝️ ⏪",
+                "❌ ⏪ ʙᴀᴄᴋ",
                 callback_data="settings_back_helper",
-                style=ButtonStyle.SECONDARY,
+                style=ButtonStyle.DANGER,
             ),
 
             InlineKeyboardButton(
                 "🍭 🏠 ʜᴏᴍᴇ 🍭",
-                callback_data="mbot_cb",
+                callback_data="settings_back_helper",
                 style=ButtonStyle.PRIMARY,
             ),
 
             InlineKeyboardButton(
-                "⏩ ☝️",
+                "ɴᴇxᴛ ⏩ ☝️",
                 callback_data="managebot123 settings_back_helper",
-                style=ButtonStyle.SECONDARY,
+                style=ButtonStyle.SUCCESS,
             ),
         ],
 
