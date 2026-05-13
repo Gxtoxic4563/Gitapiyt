@@ -34,7 +34,7 @@ class BUTTONS(object):
             InlineKeyboardButton(
                 "🍭 📢 ᴛᴀɢ-ᴀʟʟ",
                 callback_data="mplus HELP_TagAll",
-                style=ButtonStyle.DESTRUCTIVE,
+                style=ButtonStyle.DANGER,
             ),
 
             InlineKeyboardButton(
@@ -46,7 +46,7 @@ class BUTTONS(object):
             InlineKeyboardButton(
                 "🍭 ⚙️ ᴇxᴛʀᴀ",
                 callback_data="mplus HELP_Extra",
-                style=ButtonStyle.DESTRUCTIVE,
+                style=ButtonStyle.DANGER,
             ),
         ],
 
@@ -78,7 +78,7 @@ class BUTTONS(object):
             InlineKeyboardButton(
                 "🍭 🔤 ғᴏɴᴛ",
                 callback_data="mplus HELP_Font",
-                style=ButtonStyle.DESTRUCTIVE,
+                style=ButtonStyle.DANGER,
             ),
 
             InlineKeyboardButton(
@@ -90,7 +90,7 @@ class BUTTONS(object):
             InlineKeyboardButton(
                 "🍭 📊 ᴛ-ɢʀᴀᴘʜ",
                 callback_data="mplus HELP_TG",
-                style=ButtonStyle.DESTRUCTIVE,
+                style=ButtonStyle.DANGER,
             ),
         ],
 
@@ -122,7 +122,7 @@ class BUTTONS(object):
             InlineKeyboardButton(
                 "🍭 🗣️ ᴛᴛs",
                 callback_data="mplus HELP_TTS",
-                style=ButtonStyle.DESTRUCTIVE,
+                style=ButtonStyle.DANGER,
             ),
 
             InlineKeyboardButton(
@@ -134,7 +134,7 @@ class BUTTONS(object):
             InlineKeyboardButton(
                 "🍭 📝 ǫᴜᴏᴛʟʏ",
                 callback_data="mplus HELP_Q",
-                style=ButtonStyle.DESTRUCTIVE,
+                style=ButtonStyle.DANGER,
             ),
         ],
 
@@ -176,7 +176,7 @@ class BUTTONS(object):
             InlineKeyboardButton(
                 "❌ 🗑 ᴄʟᴏsᴇ 🗑 ❌",
                 callback_data="close",
-                style=ButtonStyle.DESTRUCTIVE,
+                style=ButtonStyle.DANGER,
             ),
         ],
     ]
