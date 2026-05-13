@@ -36,7 +36,7 @@ def help_pannel(_, START=None):
                 InlineKeyboardButton(
                     "🍭 🚫 ɢʙᴀɴ",
                     callback_data="help_callback hb4",
-                    style=ButtonStyle.DESTRUCTIVE
+                    style=ButtonStyle.DANGER
                 ),
             ],
 
@@ -72,7 +72,7 @@ def help_pannel(_, START=None):
                 InlineKeyboardButton(
                     "🍭 📢 ʙʀᴏᴀᴅᴄᴀsᴛ",
                     callback_data="help_callback hb8",
-                    style=ButtonStyle.DESTRUCTIVE
+                    style=ButtonStyle.DANGER
                 ),
 
                 InlineKeyboardButton(
@@ -136,7 +136,7 @@ def help_pannel(_, START=None):
                 InlineKeyboardButton(
                     "❌ 🗑 ᴄʟᴏsᴇ 🗑 ❌",
                     callback_data="close",
-                    style=ButtonStyle.DESTRUCTIVE
+                    style=ButtonStyle.DANGER
                 ),
             ],
         ]
