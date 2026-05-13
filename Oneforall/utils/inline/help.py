@@ -1,157 +1,96 @@
-from typing import Union
-
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.enums import ButtonStyle
-from Oneforall import app
 
 
-def help_pannel(_, START: Union[bool, int] = None):
-    first = [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data=f"close")]
-    second = [
-        InlineKeyboardButton(
-            text=_["BACK_PAGE"],
-            callback_data=f"mbot_cb",
-            style=ButtonStyle.PRIMARY,
-        ),
-        InlineKeyboardButton(
-            text=_["BACK_BUTTON"],
-            callback_data=f"settingsback_helper",
-            style=ButtonStyle.PRIMARY,
-        ),
-        InlineKeyboardButton(
-            text=_["NEXT_PAGE"],
-            callback_data=f"mbot_cb",
-            style=ButtonStyle.PRIMARY,
-        ),
-    ]
-    mark = second if START else first
+def help_pannel(_, START=None):
+
     upl = InlineKeyboardMarkup(
         [
+
+            # ===== FIRST ROW =====
+
             [
                 InlineKeyboardButton(
-                    text=_["H_B_1"],
+                    "🎵 Play",
                     callback_data="help_callback hb1",
+                    style=ButtonStyle.PRIMARY
                 ),
+
                 InlineKeyboardButton(
-                    text=_["H_B_2"],
+                    "⚡ Ping",
                     callback_data="help_callback hb2",
+                    style=ButtonStyle.SECONDARY
                 ),
+            ],
+
+            # ===== SECOND ROW =====
+
+            [
                 InlineKeyboardButton(
-                    text=_["H_B_3"],
+                    "🛡 Admin",
                     callback_data="help_callback hb3",
+                    style=ButtonStyle.PRIMARY
                 ),
-            ],
-            [
+
                 InlineKeyboardButton(
-                    text=_["H_B_4"],
+                    "🚫 Gban",
                     callback_data="help_callback hb4",
+                    style=ButtonStyle.DESTRUCTIVE
                 ),
+            ],
+
+            # ===== THIRD ROW =====
+
+            [
                 InlineKeyboardButton(
-                    text=_["H_B_5"],
+                    "🎧 Song",
                     callback_data="help_callback hb5",
+                    style=ButtonStyle.SECONDARY
                 ),
+
                 InlineKeyboardButton(
-                    text=_["H_B_6"],
+                    "🔁 Loop",
                     callback_data="help_callback hb6",
+                    style=ButtonStyle.PRIMARY
                 ),
             ],
+
+            # ===== BIG BUTTON =====
+
             [
                 InlineKeyboardButton(
-                    text=_["H_B_7"],
+                    "🎮 Fun Games",
                     callback_data="help_callback hb7",
-                ),
-                InlineKeyboardButton(
-                    text=_["H_B_8"],
-                    callback_data="help_callback hb8",
-                ),
-                InlineKeyboardButton(
-                    text=_["H_B_9"],
-                    callback_data="help_callback hb9",
+                    style=ButtonStyle.PRIMARY
                 ),
             ],
+
+            # ===== PAGE NAVIGATION =====
+
             [
                 InlineKeyboardButton(
-                    text=_["H_B_10"],
-                    callback_data="help_callback hb10",
+                    "◀️ Page 1",
+                    callback_data="help_prev",
+                    style=ButtonStyle.SECONDARY
                 ),
+
                 InlineKeyboardButton(
-                    text=_["H_B_11"],
-                    callback_data="help_callback hb11",
-                ),
-                InlineKeyboardButton(
-                    text=_["H_B_12"],
-                    callback_data="help_callback hb12",
+                    "Page 2 ▶️",
+                    callback_data="help_next",
+                    style=ButtonStyle.SECONDARY
                 ),
             ],
+
+            # ===== CLOSE =====
+
             [
                 InlineKeyboardButton(
-                    text=_["H_B_13"],
-                    callback_data="help_callback hb13",
-                ),
-                InlineKeyboardButton(
-                    text=_["H_B_14"],
-                    callback_data="help_callback hb14",
-                ),
-                InlineKeyboardButton(
-                    text=_["H_B_15"],
-                    callback_data="help_callback hb15",
+                    "❌ Close",
+                    callback_data="close",
+                    style=ButtonStyle.DESTRUCTIVE
                 ),
             ],
-            [
-                InlineKeyboardButton(
-                    text=_["H_B_26"],
-                    callback_data="help_callback hb17",
-                ),
-                InlineKeyboardButton(
-                    text=_["H_B_25"],
-                    callback_data="help_callback hb16",
-                ),
-                InlineKeyboardButton(
-                    "🎮 ғᴜɴ ɢᴀᴍᴇ",
-                    callback_data="help_callback hb21",
-                ),
-            ],
-            [
-                InlineKeyboardButton(
-                    text=_["H_B_27"],
-                    callback_data="help_callback hb18",
-                ),
-                InlineKeyboardButton(
-                    text=_["H_B_28"],
-                    callback_data="help_callback hb19",
-                ),
-                InlineKeyboardButton(
-                    "✨ ғsᴜʙ",
-                    callback_data="help_callback hb20",
-                ),
-            ],
-            mark,
         ]
     )
+
     return upl
-
-
-def help_back_markup(_):
-    upl = InlineKeyboardMarkup(
-        [
-            [
-                InlineKeyboardButton(
-                    text=_["BACK_BUTTON"],
-                    callback_data=f"settings_back_helper",
-                ),
-            ]
-        ]
-    )
-    return upl
-
-
-def private_help_panel(_):
-    buttons = [
-        [
-            InlineKeyboardButton(
-                text=_["S_B_4"],
-                url=f"https://t.me/{app.username}?start=help",
-            ),
-        ],
-    ]
-    return buttons
