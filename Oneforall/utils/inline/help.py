@@ -20,7 +20,7 @@ def help_pannel(_, START=None):
                 InlineKeyboardButton(
                     "🍭 ⚡ ᴘɪɴɢ",
                     callback_data="help_callback hb2",
-                    style=ButtonStyle.SECONDARY
+                    style=ButtonStyle.SUCCESS
                 ),
             ],
 
@@ -46,7 +46,7 @@ def help_pannel(_, START=None):
                 InlineKeyboardButton(
                     "🍭 🎧 sᴏɴɢ",
                     callback_data="help_callback hb5",
-                    style=ButtonStyle.SECONDARY
+                    style=ButtonStyle.SUCCESS
                 ),
 
                 InlineKeyboardButton(
@@ -60,13 +60,13 @@ def help_pannel(_, START=None):
 
             [
                 InlineKeyboardButton(
-                    "🍭 🎮 ғᴜɴ ɢᴀᴍᴇs",
+                    "🍭 🎮 ғᴜɴ ɢᴀᴍᴇs 🍭",
                     callback_data="help_callback hb7",
                     style=ButtonStyle.PRIMARY
                 ),
             ],
 
-            # ================= EXTRA ROW =================
+            # ================= ROW 4 =================
 
             [
                 InlineKeyboardButton(
@@ -82,13 +82,13 @@ def help_pannel(_, START=None):
                 ),
             ],
 
-            # ================= EXTRA ROW =================
+            # ================= ROW 5 =================
 
             [
                 InlineKeyboardButton(
                     "🍭 🔍 sᴇᴇᴋ",
                     callback_data="help_callback hb10",
-                    style=ButtonStyle.SECONDARY
+                    style=ButtonStyle.SUCCESS
                 ),
 
                 InlineKeyboardButton(
@@ -98,35 +98,35 @@ def help_pannel(_, START=None):
                 ),
             ],
 
-            # ================= BIG BUTTON =================
+            # ================= SPECIAL BUTTON =================
 
             [
                 InlineKeyboardButton(
                     "🍭 ✨ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴏᴏʜɪ ✨ 🍭",
-                    callback_data="roohi_help",
-                    style=ButtonStyle.SECONDARY
+                    callback_data="settings_back_helper",
+                    style=ButtonStyle.SUCCESS
                 ),
             ],
 
-            # ================= PAGE NAVIGATION =================
+            # ================= NAVIGATION =================
 
             [
                 InlineKeyboardButton(
                     "☝️ ⏪ ᴘʀᴇᴠ",
-                    callback_data="help_prev",
-                    style=ButtonStyle.SECONDARY
+                    callback_data="settings_back_helper",
+                    style=ButtonStyle.DANGER
                 ),
 
                 InlineKeyboardButton(
                     "🍭 🏠 ʜᴏᴍᴇ 🍭",
-                    callback_data="mbot_cb",
+                    callback_data="settings_back_helper",
                     style=ButtonStyle.PRIMARY
                 ),
 
                 InlineKeyboardButton(
                     "ɴᴇxᴛ ⏩ ☝️",
-                    callback_data="help_next",
-                    style=ButtonStyle.SECONDARY
+                    callback_data="managebot123 settings_back_helper",
+                    style=ButtonStyle.SUCCESS
                 ),
             ],
 
@@ -144,14 +144,15 @@ def help_pannel(_, START=None):
 
     return upl
 
+
 def help_back_markup(_):
     upl = InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton(
-                    "☝️ ⏪ ʙᴀᴄᴋ",
+                    "❌ ⏪ ʙᴀᴄᴋ ⏪ ❌",
                     callback_data="settings_back_helper",
-                    style=ButtonStyle.SECONDARY,
+                    style=ButtonStyle.DANGER,
                 ),
             ]
         ]
