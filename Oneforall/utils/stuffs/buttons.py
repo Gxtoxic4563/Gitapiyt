@@ -10,19 +10,19 @@ class BUTTONS(object):
 
         [
             InlineKeyboardButton(
-                "🤖 ᴄʜᴀᴛɢᴘᴛ",
+                "🍭 🤖 ᴄʜᴀᴛɢᴘᴛ",
                 callback_data="mplus HELP_ChatGPT",
                 style=ButtonStyle.PRIMARY,
             ),
 
             InlineKeyboardButton(
-                "📜 ʜɪsᴛᴏʀʏ",
+                "🍭 📜 ʜɪsᴛᴏʀʏ",
                 callback_data="mplus HELP_History",
                 style=ButtonStyle.SECONDARY,
             ),
 
             InlineKeyboardButton(
-                "🎬 ʀᴇᴇʟ",
+                "🍭 🎬 ʀᴇᴇʟ",
                 callback_data="mplus HELP_Reel",
                 style=ButtonStyle.PRIMARY,
             ),
@@ -32,19 +32,19 @@ class BUTTONS(object):
 
         [
             InlineKeyboardButton(
-                "📢 ᴛᴀɢ-ᴀʟʟ",
+                "🍭 📢 ᴛᴀɢ-ᴀʟʟ",
                 callback_data="mplus HELP_TagAll",
                 style=ButtonStyle.DESTRUCTIVE,
             ),
 
             InlineKeyboardButton(
-                "ℹ️ ɪɴғᴏ",
+                "🍭 ℹ️ ɪɴғᴏ",
                 callback_data="mplus HELP_Info",
                 style=ButtonStyle.PRIMARY,
             ),
 
             InlineKeyboardButton(
-                "⚙️ ᴇxᴛʀᴀ",
+                "🍭 ⚙️ ᴇxᴛʀᴀ",
                 callback_data="mplus HELP_Extra",
                 style=ButtonStyle.DESTRUCTIVE,
             ),
@@ -54,19 +54,19 @@ class BUTTONS(object):
 
         [
             InlineKeyboardButton(
-                "💞 ᴄᴏᴜᴘʟᴇs",
+                "🍭 💞 ᴄᴏᴜᴘʟᴇs",
                 callback_data="mplus HELP_Couples",
                 style=ButtonStyle.PRIMARY,
             ),
 
             InlineKeyboardButton(
-                "🎭 ᴀᴄᴛɪᴏɴ",
+                "🍭 🎭 ᴀᴄᴛɪᴏɴ",
                 callback_data="mplus HELP_Action",
                 style=ButtonStyle.SECONDARY,
             ),
 
             InlineKeyboardButton(
-                "🔎 sᴇᴀʀᴄʜ",
+                "🍭 🔎 sᴇᴀʀᴄʜ",
                 callback_data="mplus HELP_Search",
                 style=ButtonStyle.PRIMARY,
             ),
@@ -76,19 +76,19 @@ class BUTTONS(object):
 
         [
             InlineKeyboardButton(
-                "🔤 ғᴏɴᴛ",
+                "🍭 🔤 ғᴏɴᴛ",
                 callback_data="mplus HELP_Font",
                 style=ButtonStyle.DESTRUCTIVE,
             ),
 
             InlineKeyboardButton(
-                "🤖 ʙᴏᴛs",
+                "🍭 🤖 ʙᴏᴛs",
                 callback_data="mplus HELP_Bots",
                 style=ButtonStyle.PRIMARY,
             ),
 
             InlineKeyboardButton(
-                "📊 ᴛ-ɢʀᴀᴘʜ",
+                "🍭 📊 ᴛ-ɢʀᴀᴘʜ",
                 callback_data="mplus HELP_TG",
                 style=ButtonStyle.DESTRUCTIVE,
             ),
@@ -98,19 +98,19 @@ class BUTTONS(object):
 
         [
             InlineKeyboardButton(
-                "📂 sᴏᴜʀᴄᴇ",
+                "🍭 📂 sᴏᴜʀᴄᴇ",
                 callback_data="mplus HELP_Source",
                 style=ButtonStyle.PRIMARY,
             ),
 
             InlineKeyboardButton(
-                "⚖️ ᴛʀᴜᴛʜ-ᴅᴀʀᴇ",
+                "🍭 ⚖️ ᴛʀᴜᴛʜ-ᴅᴀʀᴇ",
                 callback_data="mplus HELP_TD",
                 style=ButtonStyle.SECONDARY,
             ),
 
             InlineKeyboardButton(
-                "🧩 ǫᴜɪᴢ",
+                "🍭 🧩 ǫᴜɪᴢ",
                 callback_data="mplus HELP_Quiz",
                 style=ButtonStyle.PRIMARY,
             ),
@@ -120,19 +120,19 @@ class BUTTONS(object):
 
         [
             InlineKeyboardButton(
-                "🗣️ ᴛᴛs",
+                "🍭 🗣️ ᴛᴛs",
                 callback_data="mplus HELP_TTS",
                 style=ButtonStyle.DESTRUCTIVE,
             ),
 
             InlineKeyboardButton(
-                "📻 ʀᴀᴅɪᴏ",
+                "🍭 📻 ʀᴀᴅɪᴏ",
                 callback_data="mplus HELP_Radio",
                 style=ButtonStyle.PRIMARY,
             ),
 
             InlineKeyboardButton(
-                "📝 ǫᴜᴏᴛʟʏ",
+                "🍭 📝 ǫᴜᴏᴛʟʏ",
                 callback_data="mplus HELP_Q",
                 style=ButtonStyle.DESTRUCTIVE,
             ),
@@ -142,7 +142,7 @@ class BUTTONS(object):
 
         [
             InlineKeyboardButton(
-                "✨ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴏᴏʜɪ ✨",
+                "🍭 ✨ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴏᴏʜɪ ✨ 🍭",
                 callback_data="roohi_owner",
                 style=ButtonStyle.SECONDARY,
             ),
@@ -152,19 +152,19 @@ class BUTTONS(object):
 
         [
             InlineKeyboardButton(
-                "⏪",
+                "☝️ ⏪",
                 callback_data="settings_back_helper",
                 style=ButtonStyle.SECONDARY,
             ),
 
             InlineKeyboardButton(
-                "🏠 ʜᴏᴍᴇ",
+                "🍭 🏠 ʜᴏᴍᴇ 🍭",
                 callback_data="mbot_cb",
                 style=ButtonStyle.PRIMARY,
             ),
 
             InlineKeyboardButton(
-                "⏩",
+                "⏩ ☝️",
                 callback_data="managebot123 settings_back_helper",
                 style=ButtonStyle.SECONDARY,
             ),
@@ -174,7 +174,7 @@ class BUTTONS(object):
 
         [
             InlineKeyboardButton(
-                "🗑 ᴄʟᴏsᴇ 🗑",
+                "❌ 🗑 ᴄʟᴏsᴇ 🗑 ❌",
                 callback_data="close",
                 style=ButtonStyle.DESTRUCTIVE,
             ),
