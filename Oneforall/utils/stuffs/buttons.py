@@ -195,50 +195,13 @@ btn(
 
             # ================= CLOSE =================
 
-            [
-                btn(
-                    "ᴄʟᴏsᴇ",
-                    5210952531676504517,
-                    callback_data="close",
-                    style=ButtonStyle.DANGER
-                ),
-            ],
-
-        ]
-    )
-
-    return upl
-
-
-def help_back_markup(_):
-
-    upl = InlineKeyboardMarkup(
-        [
-            [
-                btn(
-                    "ʙᴀᴄᴋ",
-                    5210952531676504517,
-                    callback_data="settingsback_helper",
-                    style=ButtonStyle.DANGER,
-                ),
-            ]
-        ]
-    )
-
-    return upl
-
-
-def private_help_panel(_):
-
-    buttons = [
         [
             btn(
-                "ᴏᴘᴇɴ ʜᴇʟᴘ 📚",
-                5220035141967046212,
-                url=f"https://t.me/{app.username}?start=help",
-                style=ButtonStyle.PRIMARY,
+                "ᴄʟᴏsᴇ",
+                5210952531676504517,
+                callback_data="close",
+                style=ButtonStyle.DANGER
             ),
         ],
-    ]
 
-    return buttons
+    ]
