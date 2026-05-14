@@ -123,14 +123,14 @@ def help_pannel(_, START=None):
 
     btn(
         "ʜᴏᴍᴇ",
-        5465144931230190889,
-        callback_data="settings_back_helper",
+        5462931610028510371,
+        callback_data="settingsback_helper",
         style=ButtonStyle.SUCCESS
     ),
 
     btn(
         "ɴᴇxᴛ",
-        5462931610028510371,
+        5465144931230190889,
         callback_data="mbot_cb",
         style=ButtonStyle.PRIMARY
     ),
@@ -161,7 +161,7 @@ def help_back_markup(_):
                 btn(
                     "ʙᴀᴄᴋ",
                     5210952531676504517,
-                    callback_data="settings_back_helper",
+                    callback_data="settingsback_helper",
                     style=ButtonStyle.DANGER,
                 ),
             ]
