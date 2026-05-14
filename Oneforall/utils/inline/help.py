@@ -1,6 +1,7 @@
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram.types import InlineKeyboardMarkup
 from pyrogram.enums import ButtonStyle
 from Oneforall import app
+from Oneforall.utils.inline.start import btn
 
 
 def help_pannel(_, START=None):
@@ -11,14 +12,16 @@ def help_pannel(_, START=None):
             # ================= ROW 1 =================
 
             [
-                InlineKeyboardButton(
-                    "🍭 🎵 ᴘʟᴀʏ",
+                btn(
+                    "🎵 ᴘʟᴀʏ",
+                    5224565799888382217,
                     callback_data="help_callback hb1",
                     style=ButtonStyle.PRIMARY
                 ),
 
-                InlineKeyboardButton(
-                    "🍭 ⚡ ᴘɪɴɢ",
+                btn(
+                    "⚡ ᴘɪɴɢ",
+                    5224531289826157876,
                     callback_data="help_callback hb2",
                     style=ButtonStyle.SUCCESS
                 ),
@@ -27,14 +30,16 @@ def help_pannel(_, START=None):
             # ================= ROW 2 =================
 
             [
-                InlineKeyboardButton(
-                    "🍭 🛡 ᴀᴅᴍɪɴ",
+                btn(
+                    "🛡 ᴀᴅᴍɪɴ",
+                    5224338222456283026,
                     callback_data="help_callback hb3",
                     style=ButtonStyle.PRIMARY
                 ),
 
-                InlineKeyboardButton(
-                    "🍭 🚫 ɢʙᴀɴ",
+                btn(
+                    "🚫 ɢʙᴀɴ",
+                    5224496122633941486,
                     callback_data="help_callback hb4",
                     style=ButtonStyle.DANGER
                 ),
@@ -43,24 +48,27 @@ def help_pannel(_, START=None):
             # ================= ROW 3 =================
 
             [
-                InlineKeyboardButton(
-                    "🍭 🎧 sᴏɴɢ",
+                btn(
+                    "🎧 sᴏɴɢ",
+                    5224306392453640289,
                     callback_data="help_callback hb5",
                     style=ButtonStyle.SUCCESS
                 ),
 
-                InlineKeyboardButton(
-                    "🍭 🔁 ʟᴏᴏᴘ",
+                btn(
+                    "🔁 ʟᴏᴏᴘ",
+                    5224343488086173151,
                     callback_data="help_callback hb6",
                     style=ButtonStyle.PRIMARY
                 ),
             ],
 
-            # ================= BIG BUTTON =================
+            # ================= BIG =================
 
             [
-                InlineKeyboardButton(
-                    "🍭 🎮 ғᴜɴ ɢᴀᴍᴇs 🍭",
+                btn(
+                    "🎮 ғᴜɴ ɢᴀᴍᴇs",
+                    5224659060808250648,
                     callback_data="help_callback hb7",
                     style=ButtonStyle.PRIMARY
                 ),
@@ -69,14 +77,16 @@ def help_pannel(_, START=None):
             # ================= ROW 4 =================
 
             [
-                InlineKeyboardButton(
-                    "🍭 📢 ʙʀᴏᴀᴅᴄᴀsᴛ",
+                btn(
+                    "📢 ʙʀᴏᴀᴅᴄᴀsᴛ",
+                    5224524039921365315,
                     callback_data="help_callback hb8",
                     style=ButtonStyle.DANGER
                 ),
 
-                InlineKeyboardButton(
-                    "🍭 🛠 ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ",
+                btn(
+                    "🛠 ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ",
+                    5224537882600955399,
                     callback_data="help_callback hb9",
                     style=ButtonStyle.PRIMARY
                 ),
@@ -85,25 +95,28 @@ def help_pannel(_, START=None):
             # ================= ROW 5 =================
 
             [
-                InlineKeyboardButton(
-                    "🍭 🔍 sᴇᴇᴋ",
+                btn(
+                    "🔍 sᴇᴇᴋ",
+                    5224681093990478312,
                     callback_data="help_callback hb10",
                     style=ButtonStyle.SUCCESS
                 ),
 
-                InlineKeyboardButton(
-                    "🍭 🎼 sʜᴜғғʟᴇ",
+                btn(
+                    "🎼 sʜᴜғғʟᴇ",
+                    5219696148788307720,
                     callback_data="help_callback hb11",
                     style=ButtonStyle.PRIMARY
                 ),
             ],
 
-            # ================= SPECIAL BUTTON =================
+            # ================= POWERED =================
 
             [
-                InlineKeyboardButton(
-                    "🍭 ✨ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴏᴏʜɪ ✨ 🍭",
-                    callback_data="settings_back_helper",
+                btn(
+                    "✨ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴏᴏʜɪ ✨",
+                    5222287908148371157,
+                    url="https://t.me/Go_And_Love_Yourself_Brother",
                     style=ButtonStyle.SUCCESS
                 ),
             ],
@@ -111,30 +124,34 @@ def help_pannel(_, START=None):
             # ================= NAVIGATION =================
 
             [
-                InlineKeyboardButton(
-                    "☝️ ⏪ ᴘʀᴇᴠ",
+                btn(
+                    "ʙᴀᴄᴋ",
+                    5210952531676504517,
                     callback_data="settings_back_helper",
                     style=ButtonStyle.DANGER
                 ),
 
-                InlineKeyboardButton(
-                    "🍭 🏠 ʜᴏᴍᴇ 🍭",
+                btn(
+                    "🏠 ʜᴏᴍᴇ",
+                    5465144931230190889,
                     callback_data="settings_back_helper",
-                    style=ButtonStyle.PRIMARY
+                    style=ButtonStyle.SUCCESS
                 ),
 
-                InlineKeyboardButton(
-                    "ɴᴇxᴛ ⏩ ☝️",
+                btn(
+                    "ɴᴇxᴛ",
+                    5462931610028510371,
                     callback_data="managebot123 settings_back_helper",
-                    style=ButtonStyle.SUCCESS
+                    style=ButtonStyle.PRIMARY
                 ),
             ],
 
             # ================= CLOSE =================
 
             [
-                InlineKeyboardButton(
-                    "❌ 🗑 ᴄʟᴏsᴇ 🗑 ❌",
+                btn(
+                    "ᴄʟᴏsᴇ",
+                    5210952531676504517,
                     callback_data="close",
                     style=ButtonStyle.DANGER
                 ),
@@ -146,28 +163,34 @@ def help_pannel(_, START=None):
 
 
 def help_back_markup(_):
+
     upl = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(
-                    "❌ ⏪ ʙᴀᴄᴋ ⏪ ❌",
+                btn(
+                    "ʙᴀᴄᴋ",
+                    5210952531676504517,
                     callback_data="settings_back_helper",
                     style=ButtonStyle.DANGER,
                 ),
             ]
         ]
     )
+
     return upl
 
 
 def private_help_panel(_):
+
     buttons = [
         [
-            InlineKeyboardButton(
-                "🍭 📚 ᴏᴘᴇɴ ʜᴇʟᴘ 🍭",
+            btn(
+                "📚 ᴏᴘᴇɴ ʜᴇʟᴘ",
+                5220035141967046212,
                 url=f"https://t.me/{app.username}?start=help",
                 style=ButtonStyle.PRIMARY,
             ),
         ],
     ]
+
     return buttons
