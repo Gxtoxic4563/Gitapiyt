@@ -173,7 +173,7 @@ class BUTTONS(object):
 btn(
 "ʙᴀᴄᴋ",
 5462931610028510371,
-callback_data="mbot_cb",
+callback_data="settings_back_helper",
 style=ButtonStyle.PRIMARY
 ),
 
@@ -187,7 +187,7 @@ btn(
 btn(  
     "ɴᴇxᴛ",  
     5465144931230190889,  
-    callback_data="mbot_cb",  
+    callback_data="managebot123 settings_back_helper",  
     style=ButtonStyle.PRIMARY  
 ),
 
