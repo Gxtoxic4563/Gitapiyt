@@ -167,61 +167,58 @@ class BUTTONS(object):
             ),
         ],
 
-                    # ================= NAVIGATION =================
+                    # ================= ================= NAVIGATION =================
 
 [
-    btn(
-        "ɴᴇxᴛ",
-        5462931610028510371,
-        callback_data="mbot_cb",
-        style=ButtonStyle.PRIMARY
-    ),
+btn(
+"ʙᴀᴄᴋ",
+5462931610028510371,
+callback_data="mbot_cb",
+style=ButtonStyle.PRIMARY
+),
 
-    btn(
-        "ʜᴏᴍᴇ",
-        5796647601105276281,
-        callback_data="settingsback_helper",
-        style=ButtonStyle.SUCCESS
-    ),
+btn(  
+    "ʜᴏᴍᴇ",  
+    5796647601105276281,  
+    callback_data="settingsback_helper",  
+    style=ButtonStyle.SUCCESS  
+),  
 
-    btn(
-        "ɴᴇxᴛ",
-        5465144931230190889,
-        callback_data="mbot_cb",
-        style=ButtonStyle.PRIMARY
-    ),
+btn(  
+    "ɴᴇxᴛ",  
+    5465144931230190889,  
+    callback_data="mbot_cb",  
+    style=ButtonStyle.PRIMARY  
+),
+
 ],
 
-            # ================= CLOSE =================
+================= CLOSE =================
 
-            [
-                btn(
-                    "ᴄʟᴏsᴇ",
-                    5210952531676504517,
-                    callback_data="close",
-                    style=ButtonStyle.DANGER
-                ),
-            ],
-
-        ]
-    )
-
-    return upl
-
+[
+btn(
+"ᴄʟᴏsᴇ",
+5210952531676504517,
+callback_data="close",
+style=ButtonStyle.DANGER
+),
+],
 
 def help_back_markup(_):
 
-    upl = InlineKeyboardMarkup(
-        [
-            [
-                btn(
-                    "ʙᴀᴄᴋ",
-                    5210952531676504517,
-                    callback_data="settingsback_helper",
-                    style=ButtonStyle.DANGER,
-                ),
-            ]
-        ]
-    )
+upl = InlineKeyboardMarkup(  
+    [  
+        [  
+            btn(  
+                "ʙᴀᴄᴋ",  
+                5210952531676504517,  
+                callback_data="mbot_cb",  
+                style=ButtonStyle.DANGER,  
+            ),  
+        ]  
+    ]  
+)  
 
-    return upl
+return upl
+
+Ye daal du pura
