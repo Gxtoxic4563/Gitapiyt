@@ -113,28 +113,28 @@ def help_pannel(_, START=None):
 
             # ================= NAVIGATION =================
 
-            [
-                btn(
-                    "ʙᴀᴄᴋ",
-                    5210952531676504517,
-                    callback_data="settings_back_helper",
-                    style=ButtonStyle.DANGER
-                ),
+[
+    btn(
+        "ʙᴀᴄᴋ",
+        5210952531676504517,
+        callback_data="mbot_cb",
+        style=ButtonStyle.DANGER
+    ),
 
-                btn(
-                    "ʜᴏᴍᴇ",
-                    5465144931230190889,
-                    callback_data="mbot_cb",
-                    style=ButtonStyle.SUCCESS
-                ),
+    btn(
+        "ʜᴏᴍᴇ",
+        5465144931230190889,
+        callback_data="settings_back_helper",
+        style=ButtonStyle.SUCCESS
+    ),
 
-                btn(
-                    "ɴᴇxᴛ",
-                    5462931610028510371,
-                    callback_data="managebot123",
-                    style=ButtonStyle.PRIMARY
-                ),
-            ],
+    btn(
+        "ɴᴇxᴛ",
+        5462931610028510371,
+        callback_data="mbot_cb",
+        style=ButtonStyle.PRIMARY
+    ),
+],
 
             # ================= CLOSE =================
 
