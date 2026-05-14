@@ -193,32 +193,37 @@ btn(
 
 ],
 
-================= CLOSE =================
+# ================= CLOSE =================
 
 [
-btn(
-"ᴄʟᴏsᴇ",
-5210952531676504517,
-callback_data="close",
-style=ButtonStyle.DANGER
-),
+    btn(
+        "ᴄʟᴏsᴇ",
+        5210952531676504517,
+        callback_data="close",
+        style=ButtonStyle.DANGER
+    ),
 ],
 
-def help_back_markup(_):
+    ]
+)
 
-upl = InlineKeyboardMarkup(  
-    [  
-        [  
-            btn(  
-                "ʙᴀᴄᴋ",  
-                5210952531676504517,  
-                callback_data="mbot_cb",  
-                style=ButtonStyle.DANGER,  
-            ),  
-        ]  
-    ]  
-)  
 
 return upl
 
-Ye daal du pura
+
+def help_back_markup(_):
+
+    upl = InlineKeyboardMarkup(
+        [
+            [
+                btn(
+                    "ʙᴀᴄᴋ",
+                    5210952531676504517,
+                    callback_data="mbot_cb",
+                    style=ButtonStyle.DANGER,
+                ),
+            ]
+        ]
+    )
+
+    return upl
