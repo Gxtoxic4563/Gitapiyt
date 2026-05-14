@@ -14,7 +14,7 @@ API_ID = int(os.getenv("API_ID", "27795164"))
 API_HASH = os.getenv("API_HASH", "931051ff310e587ac41154ed3d516f06")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = os.getenv("BOT_TOKEN","")
+BOT_TOKEN = os.getenv("BOT_TOKEN","8751771507:AAGrGf3pCpYW9HDg_v9CYtXdtabdRNLsy-Q")
 
 YOUTUBE_API_KEY = os.getenv("")
 # OpenAI Token
@@ -31,7 +31,7 @@ DURATION_LIMIT_MIN = int(os.getenv("DURATION_LIMIT", 100000))
 LOGGER_ID = int(os.getenv("LOGGER_ID", -1003009782265))
 
 # Get this value from @BRANDRD_ROBOT on Telegram by /id
-OWNER_ID = int(os.getenv("OWNER_ID", "8676835917"))
+OWNER_ID = int(os.getenv("OWNER_ID", "8564072723"))
 SUDO_USERS = list(map(int, os.getenv("SUDO_USERS", "5961413788").split()))
 
 ## Fill these variables if you're deploying on heroku.
@@ -86,7 +86,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(os.getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
 
 # Get your pyrogram v2 session from @BRANDEDSTRINGSESSION_BOT on Telegram
-STRING1 = os.getenv("STRING_SESSION",  "")
+STRING1 = os.getenv("STRING_SESSION",  "AQGoHtwAAW7ZfegLtDXpzXEE2IgYJS5tT7BQ9W-njStIJVLHPH8c1tIBoAu_wvjcmXQR9-56k8fep5ka8cAVujDx2FYUDuJUC1yXTUoX28_EdZNgIlw_jvjy2Erf0xJDaHDdH9ocpLoJ1GKg-DzDw382D2TsUPHm06B1ZWnnZ9R0hYxgXlw5KFVH5iLXgGBC3n4Skc_c4nL6E0uxZMaQEV4-8WCDfF9WPCiS3Kqr3XX4pkIqPWoXJDTZH1w86hi05lk6bc58deM-v1Vlw9_AbxXH-KYqyDiO0y-k1rNefSWym84b1ZEtZuoDX9MFRC7macVoBqpwVus8JQ2YG6Nefwq09IJaAAAAAAH8QlczAA")
 STRING2 = os.getenv("STRING_SESSION2", None)
 STRING3 = os.getenv("STRING_SESSION3", None)
 STRING4 = os.getenv("STRING_SESSION4", None)
