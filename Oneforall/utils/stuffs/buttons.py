@@ -10,21 +10,21 @@ class BUTTONS(object):
 
         [
             btn(
-                "🤖 ᴄʜᴀᴛɢᴘᴛ",
+                "ᴄʜᴀᴛɢᴘᴛ 🤖",
                 5222303112332598744,
                 callback_data="mplus HELP_ChatGPT",
                 style=ButtonStyle.PRIMARY,
             ),
 
             btn(
-                "📜 ʜɪsᴛᴏʀʏ",
+                "ʜɪsᴛᴏʀʏ 📜",
                 5222305195391740380,
                 callback_data="mplus HELP_History",
                 style=ButtonStyle.SUCCESS,
             ),
 
             btn(
-                "🎬 ʀᴇᴇʟ",
+                "ʀᴇᴇʟ 🎬",
                 5226526310725086929,
                 callback_data="mplus HELP_Reel",
                 style=ButtonStyle.PRIMARY,
@@ -35,21 +35,21 @@ class BUTTONS(object):
 
         [
             btn(
-                "📢 ᴛᴀɢ-ᴀʟʟ",
+                "ᴛᴀɢ-ᴀʟʟ📢",
                 5226754927539287314,
                 callback_data="mplus HELP_TagAll",
                 style=ButtonStyle.DANGER,
             ),
 
             btn(
-                "ℹ️ ɪɴғᴏ",
+                "ɪɴғᴏℹ️",
                 5228882959280401161,
                 callback_data="mplus HELP_Info",
                 style=ButtonStyle.SUCCESS,
             ),
 
             btn(
-                "⚙️ ᴇxᴛʀᴀ",
+                "ᴇxᴛʀᴀ ⚙️",
                 5220123403544980177,
                 callback_data="mplus HELP_Extra",
                 style=ButtonStyle.DANGER,
@@ -60,21 +60,21 @@ class BUTTONS(object):
 
         [
             btn(
-                "💞 ᴄᴏᴜᴘʟᴇs",
+                "ᴄᴏᴜᴘʟᴇs 💕",
                 5221961357489892670,
                 callback_data="mplus HELP_Couples",
                 style=ButtonStyle.PRIMARY,
             ),
 
             btn(
-                "🎭 ᴀᴄᴛɪᴏɴ",
+                "ᴀᴄᴛɪᴏɴ 🎭",
                 5226934878079052543,
                 callback_data="mplus HELP_Action",
                 style=ButtonStyle.SUCCESS,
             ),
 
             btn(
-                "🔎 sᴇᴀʀᴄʜ",
+                "sᴇᴀʀᴄʜ 🔎",
                 5229057012830071691,
                 callback_data="mplus HELP_Search",
                 style=ButtonStyle.PRIMARY,
@@ -85,21 +85,21 @@ class BUTTONS(object):
 
         [
             btn(
-                "🔤 ғᴏɴᴛ",
+                "ғᴏɴᴛ 🔤",
                 5226936291123295076,
                 callback_data="mplus HELP_Font",
                 style=ButtonStyle.DANGER,
             ),
 
             btn(
-                "🤖 ʙᴏᴛs",
+                "ʙᴏᴛs 🤖",
                 5222379030174526318,
                 callback_data="mplus HELP_Bots",
                 style=ButtonStyle.PRIMARY,
             ),
 
             btn(
-                "📊 ᴛ-ɢʀᴀᴘʜ",
+                "ᴛ-ɢʀᴀᴘʜ 📊",
                 5229197127548170112,
                 callback_data="mplus HELP_TG",
                 style=ButtonStyle.DANGER,
@@ -110,21 +110,21 @@ class BUTTONS(object):
 
         [
             btn(
-                "📂 sᴏᴜʀᴄᴇ",
+                "sᴏᴜʀᴄᴇ 📂",
                 5228904829253869947,
                 callback_data="mplus HELP_Source",
                 style=ButtonStyle.PRIMARY,
             ),
 
             btn(
-                "⚖️ ᴛʀᴜᴛʜ-ᴅᴀʀᴇ",
+                "ᴛʀᴜᴛʜ-ᴅᴀʀᴇ ⚖️",
                 5222121319251860086,
                 callback_data="mplus HELP_TD",
                 style=ButtonStyle.SUCCESS,
             ),
 
             btn(
-                "🧩 ǫᴜɪᴢ",
+                "ǫᴜɪᴢ 🧩",
                 5228934185355338030,
                 callback_data="mplus HELP_Quiz",
                 style=ButtonStyle.PRIMARY,
@@ -135,21 +135,21 @@ class BUTTONS(object):
 
         [
             btn(
-                "🗣️ ᴛᴛs",
+                "ᴛᴛs 🗣️",
                 5226839516920181422,
                 callback_data="mplus HELP_TTS",
                 style=ButtonStyle.DANGER,
             ),
 
             btn(
-                "📻 ʀᴀᴅɪᴏ",
+                "ʀᴀᴅɪᴏ 📻",
                 5226534191990074874,
                 callback_data="mplus HELP_Radio",
                 style=ButtonStyle.PRIMARY,
             ),
 
             btn(
-                "📝 ǫᴜᴏᴛʟʏ",
+                "ǫᴜᴏᴛʟʏ 📝",
                 5208726716414981909,
                 callback_data="mplus HELP_Q",
                 style=ButtonStyle.DANGER,
