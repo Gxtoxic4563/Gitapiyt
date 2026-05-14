@@ -13,14 +13,14 @@ def help_pannel(_, START=None):
 
             [
                 btn(
-                    "🍭 ᴘʟᴀʏ 🎵",
+                    "ᴘʟᴀʏ 🎵",
                     5224565799888382217,
                     callback_data="help_callback hb1",
                     style=ButtonStyle.PRIMARY
                 ),
 
                 btn(
-                    "🍭 ᴘɪɴɢ ⚡",
+                    "ᴘɪɴɢ ⚡",
                     5224531289826157876,
                     callback_data="help_callback hb2",
                     style=ButtonStyle.PRIMARY
@@ -29,14 +29,14 @@ def help_pannel(_, START=None):
 
             [
                 btn(
-                    "🍭 ᴀᴅᴍɪɴ 🛡",
+                    "ᴀᴅᴍɪɴ 🛡",
                     5224338222456283026,
                     callback_data="help_callback hb3",
                     style=ButtonStyle.PRIMARY
                 ),
 
                 btn(
-                    "🍭 ɢʙᴀɴ 🚫",
+                    "ɢʙᴀɴ 🚫",
                     5224496122633941486,
                     callback_data="help_callback hb4",
                     style=ButtonStyle.PRIMARY
@@ -45,14 +45,14 @@ def help_pannel(_, START=None):
 
             [
                 btn(
-                    "🍭 sᴏɴɢ 🎧",
+                    "sᴏɴɢ 🎧",
                     5224306392453640289,
                     callback_data="help_callback hb5",
                     style=ButtonStyle.PRIMARY
                 ),
 
                 btn(
-                    "🍭 ʟᴏᴏᴘ 🔁",
+                    "ʟᴏᴏᴘ 🔁",
                     5224343488086173151,
                     callback_data="help_callback hb6",
                     style=ButtonStyle.PRIMARY
@@ -61,7 +61,7 @@ def help_pannel(_, START=None):
 
             [
                 btn(
-                    "🍭 ғᴜɴ ɢᴀᴍᴇs 🎮",
+                    "ғᴜɴ ɢᴀᴍᴇs 🎮",
                     5224659060808250648,
                     callback_data="help_callback hb7",
                     style=ButtonStyle.PRIMARY
@@ -72,14 +72,14 @@ def help_pannel(_, START=None):
 
             [
                 btn(
-                    "🍭 ʙʀᴏᴀᴅᴄᴀsᴛ 📢",
+                    "ʙʀᴏᴀᴅᴄᴀsᴛ 📢",
                     5224524039921365315,
                     callback_data="help_callback hb8",
                     style=ButtonStyle.SUCCESS
                 ),
 
                 btn(
-                    "🍭 ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ 🛠",
+                    "ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ 🛠",
                     5224537882600955399,
                     callback_data="help_callback hb9",
                     style=ButtonStyle.SUCCESS
@@ -88,14 +88,14 @@ def help_pannel(_, START=None):
 
             [
                 btn(
-                    "🍭 sᴇᴇᴋ 🔍",
+                    "sᴇᴇᴋ 🔍",
                     5224681093990478312,
                     callback_data="help_callback hb10",
                     style=ButtonStyle.SUCCESS
                 ),
 
                 btn(
-                    "🍭 sʜᴜғғʟᴇ 🎼",
+                    "sʜᴜғғʟᴇ 🎼",
                     5219696148788307720,
                     callback_data="help_callback hb11",
                     style=ButtonStyle.SUCCESS
@@ -104,7 +104,7 @@ def help_pannel(_, START=None):
 
             [
                 btn(
-                    "🍭 ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴏᴏʜɪ ✨",
+                    "ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴏᴏʜɪ ✨",
                     5222287908148371157,
                     url="https://t.me/Go_And_Love_Yourself_Brother",
                     style=ButtonStyle.SUCCESS
@@ -113,34 +113,33 @@ def help_pannel(_, START=None):
 
             # ================= NAVIGATION =================
 
-            [
-                btn(
-                    "⬅️ ʙᴀᴄᴋ ❌",
-                    5210952531676504517,
-                    callback_data="settings_back_helper",
-                    style=ButtonStyle.DANGER
-                ),
+[
+    btn(
+        "⬅️ ʙᴀᴄᴋ ❌",
+        5210952531676504517,
+        callback_data="settings_back_helper",
+        style=ButtonStyle.DANGER
+    ),
 
-                btn(
-                    "🏠 ʜᴏᴍᴇ ☝️",
-                    5465144931230190889,
-                    callback_data="mbot_cb",
-                    style=ButtonStyle.SUCCESS
-                ),
+    btn(
+        "🏠 ʜᴏᴍᴇ ☝️",
+        5465144931230190889,
+        callback_data="start_back",
+        style=ButtonStyle.SUCCESS
+    ),
 
-                btn(
-                    "ɴᴇxᴛ ☝️ ➡️",
-                    5462931610028510371,
-                    callback_data="managebot123 settings_back_helper",
-                    style=ButtonStyle.PRIMARY
-                ),
-            ],
-
+    btn(
+        "ɴᴇxᴛ ☝️ ➡️",
+        5462931610028510371,
+        callback_data="managebot123 settings_back_helper",
+        style=ButtonStyle.PRIMARY
+    ),
+],
             # ================= CLOSE =================
 
             [
                 btn(
-                    "❌ ᴄʟᴏsᴇ ❌",
+                    "ᴄʟᴏsᴇ ❌",
                     5210952531676504517,
                     callback_data="close",
                     style=ButtonStyle.DANGER
@@ -175,7 +174,7 @@ def private_help_panel(_):
     buttons = [
         [
             btn(
-                "🍭 ᴏᴘᴇɴ ʜᴇʟᴘ 📚",
+                "ᴏᴘᴇɴ ʜᴇʟᴘ 📚",
                 5220035141967046212,
                 url=f"https://t.me/{app.username}?start=help",
                 style=ButtonStyle.PRIMARY,
