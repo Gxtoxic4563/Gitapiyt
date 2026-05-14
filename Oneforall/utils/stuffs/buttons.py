@@ -167,39 +167,61 @@ class BUTTONS(object):
             ),
         ],
 
-        # ================= NAVIGATION =================
+                    # ================= NAVIGATION =================
 
+[
+    btn(
+        "ɴᴇxᴛ",
+        5462931610028510371,
+        callback_data="mbot_cb",
+        style=ButtonStyle.PRIMARY
+    ),
+
+    btn(
+        "ʜᴏᴍᴇ",
+        5796647601105276281,
+        callback_data="settingsback_helper",
+        style=ButtonStyle.SUCCESS
+    ),
+
+    btn(
+        "ɴᴇxᴛ",
+        5465144931230190889,
+        callback_data="mbot_cb",
+        style=ButtonStyle.PRIMARY
+    ),
+],
+
+            # ================= CLOSE =================
+
+            [
+                btn(
+                    "ᴄʟᴏsᴇ",
+                    5210952531676504517,
+                    callback_data="close",
+                    style=ButtonStyle.DANGER
+                ),
+            ],
+
+        ]
+    )
+
+    return upl
+
+
+def help_back_markup(_):
+
+    upl = InlineKeyboardMarkup(
         [
-            btn(
-                "ʙᴀᴄᴋ",
-                5210952531676504517,
-                callback_data="settings_back_helper",
-                style=ButtonStyle.DANGER,
-            ),
+            [
+                btn(
+                    "ʙᴀᴄᴋ",
+                    5210952531676504517,
+                    callback_data="settingsback_helper",
+                    style=ButtonStyle.DANGER,
+                ),
+            ]
+        ]
+    )
 
-            btn(
-                "🏠 ʜᴏᴍᴇ",
-                5465144931230190889,
-                callback_data="settings_back_helper",
-                style=ButtonStyle.SUCCESS,
-            ),
-
-            btn(
-                "ɴᴇxᴛ",
-                5462931610028510371,
-                callback_data="managebot123 settings_back_helper",
-                style=ButtonStyle.PRIMARY,
-            ),
-        ],
-
-        # ================= CLOSE =================
-
-        [
-            btn(
-                "ᴄʟᴏsᴇ",
-                5208943560723820702,
-                callback_data="close",
-                style=ButtonStyle.DANGER,
-            ),
-        ],
-    ]
+    return upl
