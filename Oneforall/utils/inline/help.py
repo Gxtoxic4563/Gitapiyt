@@ -115,15 +115,15 @@ def help_pannel(_, START=None):
 
 [
     btn(
-        "ʙᴀᴄᴋ",
-        5210952531676504517,
+        "ɴᴇxᴛ",
+        5462931610028510371,
         callback_data="mbot_cb",
-        style=ButtonStyle.DANGER
+        style=ButtonStyle.PRIMARY
     ),
 
     btn(
         "ʜᴏᴍᴇ",
-        5462931610028510371,
+        5796647601105276281,
         callback_data="settingsback_helper",
         style=ButtonStyle.SUCCESS
     ),
