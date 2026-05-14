@@ -1,5 +1,5 @@
-from pyrogram.types import InlineKeyboardButton
 from pyrogram.enums import ButtonStyle
+from Oneforall.utils.inline.start import btn
 
 
 class BUTTONS(object):
@@ -9,20 +9,23 @@ class BUTTONS(object):
         # ================= ROW 1 =================
 
         [
-            InlineKeyboardButton(
-                "🍭 🤖 ᴄʜᴀᴛɢᴘᴛ",
+            btn(
+                "🤖 ᴄʜᴀᴛɢᴘᴛ",
+                5222303112332598744,
                 callback_data="mplus HELP_ChatGPT",
                 style=ButtonStyle.PRIMARY,
             ),
 
-            InlineKeyboardButton(
-                "🍭 📜 ʜɪsᴛᴏʀʏ",
+            btn(
+                "📜 ʜɪsᴛᴏʀʏ",
+                5222305195391740380,
                 callback_data="mplus HELP_History",
                 style=ButtonStyle.SUCCESS,
             ),
 
-            InlineKeyboardButton(
-                "🍭 🎬 ʀᴇᴇʟ",
+            btn(
+                "🎬 ʀᴇᴇʟ",
+                5226526310725086929,
                 callback_data="mplus HELP_Reel",
                 style=ButtonStyle.PRIMARY,
             ),
@@ -31,20 +34,23 @@ class BUTTONS(object):
         # ================= ROW 2 =================
 
         [
-            InlineKeyboardButton(
-                "🍭 📢 ᴛᴀɢ-ᴀʟʟ",
+            btn(
+                "📢 ᴛᴀɢ-ᴀʟʟ",
+                5226754927539287314,
                 callback_data="mplus HELP_TagAll",
                 style=ButtonStyle.DANGER,
             ),
 
-            InlineKeyboardButton(
-                "🍭 ℹ️ ɪɴғᴏ",
+            btn(
+                "ℹ️ ɪɴғᴏ",
+                5228882959280401161,
                 callback_data="mplus HELP_Info",
                 style=ButtonStyle.SUCCESS,
             ),
 
-            InlineKeyboardButton(
-                "🍭 ⚙️ ᴇxᴛʀᴀ",
+            btn(
+                "⚙️ ᴇxᴛʀᴀ",
+                5220123403544980177,
                 callback_data="mplus HELP_Extra",
                 style=ButtonStyle.DANGER,
             ),
@@ -53,20 +59,23 @@ class BUTTONS(object):
         # ================= ROW 3 =================
 
         [
-            InlineKeyboardButton(
-                "🍭 💞 ᴄᴏᴜᴘʟᴇs",
+            btn(
+                "💞 ᴄᴏᴜᴘʟᴇs",
+                5221961357489892670,
                 callback_data="mplus HELP_Couples",
                 style=ButtonStyle.PRIMARY,
             ),
 
-            InlineKeyboardButton(
-                "🍭 🎭 ᴀᴄᴛɪᴏɴ",
+            btn(
+                "🎭 ᴀᴄᴛɪᴏɴ",
+                5226934878079052543,
                 callback_data="mplus HELP_Action",
                 style=ButtonStyle.SUCCESS,
             ),
 
-            InlineKeyboardButton(
-                "🍭 🔎 sᴇᴀʀᴄʜ",
+            btn(
+                "🔎 sᴇᴀʀᴄʜ",
+                5229057012830071691,
                 callback_data="mplus HELP_Search",
                 style=ButtonStyle.PRIMARY,
             ),
@@ -75,20 +84,23 @@ class BUTTONS(object):
         # ================= ROW 4 =================
 
         [
-            InlineKeyboardButton(
-                "🍭 🔤 ғᴏɴᴛ",
+            btn(
+                "🔤 ғᴏɴᴛ",
+                5226936291123295076,
                 callback_data="mplus HELP_Font",
                 style=ButtonStyle.DANGER,
             ),
 
-            InlineKeyboardButton(
-                "🍭 🤖 ʙᴏᴛs",
+            btn(
+                "🤖 ʙᴏᴛs",
+                5222379030174526318,
                 callback_data="mplus HELP_Bots",
                 style=ButtonStyle.PRIMARY,
             ),
 
-            InlineKeyboardButton(
-                "🍭 📊 ᴛ-ɢʀᴀᴘʜ",
+            btn(
+                "📊 ᴛ-ɢʀᴀᴘʜ",
+                5229197127548170112,
                 callback_data="mplus HELP_TG",
                 style=ButtonStyle.DANGER,
             ),
@@ -97,20 +109,23 @@ class BUTTONS(object):
         # ================= ROW 5 =================
 
         [
-            InlineKeyboardButton(
-                "🍭 📂 sᴏᴜʀᴄᴇ",
+            btn(
+                "📂 sᴏᴜʀᴄᴇ",
+                5228904829253869947,
                 callback_data="mplus HELP_Source",
                 style=ButtonStyle.PRIMARY,
             ),
 
-            InlineKeyboardButton(
-                "🍭 ⚖️ ᴛʀᴜᴛʜ-ᴅᴀʀᴇ",
+            btn(
+                "⚖️ ᴛʀᴜᴛʜ-ᴅᴀʀᴇ",
+                5222121319251860086,
                 callback_data="mplus HELP_TD",
                 style=ButtonStyle.SUCCESS,
             ),
 
-            InlineKeyboardButton(
-                "🍭 🧩 ǫᴜɪᴢ",
+            btn(
+                "🧩 ǫᴜɪᴢ",
+                5228934185355338030,
                 callback_data="mplus HELP_Quiz",
                 style=ButtonStyle.PRIMARY,
             ),
@@ -119,20 +134,23 @@ class BUTTONS(object):
         # ================= ROW 6 =================
 
         [
-            InlineKeyboardButton(
-                "🍭 🗣️ ᴛᴛs",
+            btn(
+                "🗣️ ᴛᴛs",
+                5226839516920181422,
                 callback_data="mplus HELP_TTS",
                 style=ButtonStyle.DANGER,
             ),
 
-            InlineKeyboardButton(
-                "🍭 📻 ʀᴀᴅɪᴏ",
+            btn(
+                "📻 ʀᴀᴅɪᴏ",
+                5226534191990074874,
                 callback_data="mplus HELP_Radio",
                 style=ButtonStyle.PRIMARY,
             ),
 
-            InlineKeyboardButton(
-                "🍭 📝 ǫᴜᴏᴛʟʏ",
+            btn(
+                "📝 ǫᴜᴏᴛʟʏ",
+                5208726716414981909,
                 callback_data="mplus HELP_Q",
                 style=ButtonStyle.DANGER,
             ),
@@ -141,9 +159,10 @@ class BUTTONS(object):
         # ================= POWERED =================
 
         [
-            InlineKeyboardButton(
-                "🍭 ✨ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴏᴏʜɪ ✨ 🍭",
-                callback_data="settings_back_helper",
+            btn(
+                "✨ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴏᴏʜɪ ✨",
+                5226938803679162970,
+                url="https://t.me/Go_And_Love_Yourself_Brother",
                 style=ButtonStyle.SUCCESS,
             ),
         ],
@@ -151,30 +170,34 @@ class BUTTONS(object):
         # ================= NAVIGATION =================
 
         [
-            InlineKeyboardButton(
-                "❌ ⏪ ʙᴀᴄᴋ",
+            btn(
+                "ʙᴀᴄᴋ",
+                5210952531676504517,
                 callback_data="settings_back_helper",
                 style=ButtonStyle.DANGER,
             ),
 
-            InlineKeyboardButton(
-                "🍭 🏠 ʜᴏᴍᴇ 🍭",
+            btn(
+                "🏠 ʜᴏᴍᴇ",
+                5465144931230190889,
                 callback_data="settings_back_helper",
-                style=ButtonStyle.PRIMARY,
+                style=ButtonStyle.SUCCESS,
             ),
 
-            InlineKeyboardButton(
-                "ɴᴇxᴛ ⏩ ☝️",
+            btn(
+                "ɴᴇxᴛ",
+                5462931610028510371,
                 callback_data="managebot123 settings_back_helper",
-                style=ButtonStyle.SUCCESS,
+                style=ButtonStyle.PRIMARY,
             ),
         ],
 
         # ================= CLOSE =================
 
         [
-            InlineKeyboardButton(
-                "❌ 🗑 ᴄʟᴏsᴇ 🗑 ❌",
+            btn(
+                "ᴄʟᴏsᴇ",
+                5208943560723820702,
                 callback_data="close",
                 style=ButtonStyle.DANGER,
             ),
